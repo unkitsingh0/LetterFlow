@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Metadata -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Page title -->
+    <title>LetterFlow</title>
+    <!-- External JavaScript file with defer attribute for asynchronous loading -->
+    <script src="index.js" defer></script>
+    <!-- External stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="icon.png" type="image/x-icon" />
+  </head>
+  <body>
+    <!-- Main content section -->
+    <main>
+      <!-- Range selector with input and value display -->
+      <div class="rangeSelector">
+        <h1 id="appName">LetterFlow</h1>
+        <div class="rangeSelectorChild">
+          <!-- Input element for selecting a range -->
+          <input type="range" name="" id="rangeInput" min="10" max="100" />
+
+          <!-- Display the current value of the range input -->
+          <h1 id="rangeValue">55</h1>
+        </div>
+      </div>
+
+      <!-- Container for dynamically generated content -->
+      <div class="two"></div>
+    </main>
+  </body>
+</html>

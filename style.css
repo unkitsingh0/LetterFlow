@@ -1,0 +1,86 @@
+/* Apply box-sizing and reset margin and padding for all elements */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: aliceblue;
+}
+
+/* Main container styling */
+main {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+  padding: 1rem;
+}
+
+/* Styling for the range selector container */
+.rangeSelector {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+  border: 1px solid rgb(18, 56, 88);
+  background-color: rgb(18, 56, 88);
+  width: 100vw;
+}
+
+/* Styling for the range value display */
+.rangeSelector h1 {
+  background-color: rgb(18, 56, 88);
+  color: white;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+.rangeSelectorChild {
+  background-color: rgb(18, 56, 88);
+  display: flex;
+}
+
+/* Styling for the container of dynamically generated content */
+.two {
+  display: flex;
+  flex-wrap: wrap;
+  line-height: 2;
+  color: rgb(18, 56, 88);
+  font-weight: bold;
+  font-size: 1.7rem;
+  margin-top: 10rem;
+  padding: 1.4rem;
+}
+
+/* Styling for individual words */
+.words {
+  display: flex;
+  margin: 0 4px;
+}
+
+/* Styling for completed letters */
+.completeColor {
+  color: rgb(147, 18, 222);
+}
+
+/* Styling for incorrect letters */
+.wrongColor {
+  color: red;
+}
+
+/* Blink animation keyframes definition */
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+/* Styling for the blinking cursor animation */
+.active::before {
+  content: "|";
+  color: rgb(18, 56, 88);
+  animation: blink 1s infinite;
+}
